@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-block-start: 40px;
+}
+
+.sec1 {
+    background-color: aqua;
+    max-width: 470px;
+    width: 65%;
+    height: 100vh;
+}
+
+.sec2 {
+    background-color: red;
+    width: 35%;
+    height: 100vh;
+}
+
+.divHavePhotosInStorys {
+    background: rgb(239, 239, 239);
+    border: solid 0.3px rgb(129, 116, 116);
+    height: 85px;
+    margin-block-end: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+.divHavestorysAndAbsolot{
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    left: 0;
+}
+
+.divHaveStoryAndName {
+    margin-right: 6px;
+    margin-left: 6px;
+    width: 45px; 
+    transition: 0.5s ease-in-out;
+}
+
+.photosInStorys {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 1px;
+}
+
+
+
+.theNameOfThePersonOfTheStory{
+    overflow: hidden;
+    color: rgb(81, 73, 73);
+    width: 45px;
+    font-weight: 100;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+
+#diVLeftIcon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: rgb(90, 89, 89);
+    position: absolute;
+    left: 5px;
+    background-color: white;   
+    z-index: 4;
+    cursor: pointer;
+}
+
+#diVRightIcon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: rgb(90, 89, 89);
+    position: absolute;
+    right: 5px;
+    background-color: white;  
+    z-index: 4; 
+    cursor: pointer;
+}
+
+.theStroyOpen{
+    width: 98.8vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(23, 22, 22);
+    z-index: 10;
+}
+
+#logoInStoryOpen{
+    position: fixed;
+    top: 20px;
+    left: 10px;
+}
+#logoInStoryOpen svg{
+    color: white;
+}
+
+.closeStoryOpen{
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+}
+.closeStoryOpen svg{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+.photoStoryOpen{
+    width: 400px;
+    height: 80vh;
+}
+
+
