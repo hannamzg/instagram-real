@@ -52,8 +52,6 @@ function stam(){
     let stories  = mangerStroy.getTheStoryes();
     let divHaveStoryAndName = document.getElementsByClassName("divHaveStoryAndName");
     let body = document.querySelector("body");
-    let main = document.getElementById("main");
-    let header = document.getElementById("header");
 
     for(let i=0 ; i<divHaveStoryAndName.length; i++){
     divHaveStoryAndName[i].addEventListener("click" ,(e)=>{
