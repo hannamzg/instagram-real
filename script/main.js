@@ -9,20 +9,20 @@ let  mangerStroy =  new story();
 let divHavestorysAndAbsolot = document.querySelector(".divHavestorysAndAbsolot");
 
 
-mangerStroy.addStories("https://d5nunyagcicgy.cloudfront.net/external_assets/hero_examples/hair_beach_v391182663/original.jpeg" , "hanna")
-mangerStroy.addStories("https://static-wix-blog.wix.com/photography/2018/09/comment-with-stunning-photo_featured.png" , "rami")
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso")
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso")
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso")
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso")
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso")
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso")
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso")
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso")
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso")
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso")
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso")
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso")
+mangerStroy.addStories("https://d5nunyagcicgy.cloudfront.net/external_assets/hero_examples/hair_beach_v391182663/original.jpeg" , "hanna");
+mangerStroy.addStories("https://static-wix-blog.wix.com/photography/2018/09/comment-with-stunning-photo_featured.png" , "rami");
+mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
+mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
+mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
+mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
+mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
+mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
+mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
+mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
+mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
+mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
+mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
+mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
 
 render()
 function render(){
@@ -80,7 +80,7 @@ function stam(){
                 body.appendChild(div1);
                     setTimeout(() => {
                         div1.style.display = "none"
-                    }, 1000);
+                    }, 2000);
                 }
            
         }
@@ -99,7 +99,7 @@ function stam(){
 
 
 
-leftIcon.style.opacity = "0";
+leftIcon.style.display = "none";
  function reternOffSet2(){
     for(let i= 0; i<sCont.length; i++){ 
         return -sCont[i].offsetWidth;
@@ -112,18 +112,18 @@ function scrollHoriz(val){
     currentScrollPosition += (val * scrollAmount);
     if(currentScrollPosition >= 0){
         currentScrollPosition = 0;
-        leftIcon.style.opacity = "0";
+        leftIcon.style.display = "none";
     }
     else{
-        leftIcon.style.opacity = "1";
+        leftIcon.style.display = "block";
     }
 
     if(currentScrollPosition <= maxScroll) {
         currentScrollPosition = maxScroll;
-        rightIcon.style.opacity = "0";
+        rightIcon.style.display = "none";
     }
     else{
-        rightIcon.style.opacity = "1";
+        rightIcon.style.display = "block";
     }
 
     for(let i = 0; i<sCont.length; i++){
