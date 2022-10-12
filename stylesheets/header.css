@@ -75,3 +75,103 @@ nav {
     column-gap: 22px;
     list-style: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    header {
+        min-height: 50px;
+    }
+    
+    .iconsMenuInTheHeader{
+        font-size: 10px !important; 
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .instgramLogoInTheHeader{
+        width: 70px;
+    }
+
+    nav {
+        max-width: 1000px;
+    }
+
+    .divHaveSerchBarAndLogo {
+        width: 100px ;  
+    }
+    
+    
+    #searchIcon {
+        top: 9px;
+        left: 5px;
+        position: absolute;
+        z-index: 2;
+        width: 15px; 
+        height: 15px;
+        background: rgb(239, 239, 239);
+    }
+    
+    #searchIcon2 {
+        display: none;
+        top: 9px;
+        right: 10px ;
+        position: absolute;
+        z-index: 3;
+        width: 17px; 
+        height: 17px;
+        background: #D0D0D1;
+        border-radius: 50%;
+        color: white;
+    }
+    
+    .divHaveSerchBarInNav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    
+    #serchInpt::placeholder {
+        padding-inline-start: 20px;
+        
+    }
+    
+    #serchInpt {
+       padding: 10px;
+       border: none;
+       min-width: 45px;
+       width: 150px;
+       background: rgb(239, 239, 239);   
+       border-radius: 8px;
+       min-height: 30px;
+    }
+    
+    #serchInpt:focus::placeholder {
+        padding-inline-start: 0px;
+    }
+    
+    .navMenu {
+        display: flex;
+        column-gap: 10px;
+        list-style: none;
+    }
+    
+    
+    
+
+}

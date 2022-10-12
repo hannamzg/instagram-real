@@ -8,41 +8,25 @@ let divHaveStoryAndName = document.querySelectorAll(".divHaveStoryAndName");
 let  mangerStroy =  new story();
 let divHavestorysAndAbsolot = document.querySelector(".divHavestorysAndAbsolot");
 let base_api = `https://www.breakingbadapi.com/api/`;
+let maxScroll = 0;
 
-
-
-
-/* mangerStroy.addStories("https://d5nunyagcicgy.cloudfront.net/external_assets/hero_examples/hair_beach_v391182663/original.jpeg" , "hanna");
-mangerStroy.addStories("https://static-wix-blog.wix.com/photography/2018/09/comment-with-stunning-photo_featured.png" , "rami");
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");
-mangerStroy.addStories("https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" , "soso");  */
 
 
 
 async function getNames(){
     let theApi = `${base_api}character/random`
-    for (let i = 0; i < 20;i++){
+    for (let i = 0; i < 14;i++){
         let afterFetch = await (await fetch(theApi)).json();
         mangerStroy.addStories(afterFetch[0].img, afterFetch[0].name);
-        buildTheStories();
     };
-   
+    buildTheStories();
+    maxScroll = Number (hScroll.offsetWidth) + reternOffSet2();
+    
 }
 
 
 
 getNames()
-
 
 function buildTheStories(){
     let stories  = mangerStroy.getTheStoryes();
@@ -103,7 +87,7 @@ function stam(){
                 }
            
         }
-    })
+     })
     }
 }
 
@@ -112,13 +96,12 @@ function stam(){
 
 
 leftIcon.style.display = "none";
- function reternOffSet2(){
+
+function reternOffSet2(){
     for(let i= 0; i<sCont.length; i++){ 
         return -sCont[i].offsetWidth;
     }
-} 
-
-let maxScroll = 170 + reternOffSet2(); 
+}
 
 function scrollHoriz(val){     
     currentScrollPosition += (val * scrollAmount);

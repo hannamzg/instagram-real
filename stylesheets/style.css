@@ -138,3 +138,93 @@ main {
 }
 
 
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    
+    main {
+        margin-block-start: 30px;
+        width: 100%;
+    }
+    
+    .sec1 {
+        background-color: aqua;
+        max-width: 470px;
+        width: 65%;
+        height: 100vh;
+    }
+    
+    .sec2 {
+        display: none;
+    }
+    
+    .divHavePhotosInStorys {
+        height: 55px;
+        margin-block-end: 20px;
+    }
+    
+    .divHaveStoryAndName {
+        width: 25px; 
+    }
+    
+    .photosInStorys {
+        width: 30px;
+        height: 30px;
+    }
+    
+    
+    
+    .theNameOfThePersonOfTheStory{
+        width: 25px;
+        height: 15px;
+        font-weight: 100;
+        font-size: 8px;
+       
+    }
+    
+    
+    #diVLeftIcon{
+        width: 15px;
+        height: 15px;
+        left: 5px;
+    }
+    
+    #diVRightIcon{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        right: 5px;
+
+    }
+    
+    .theStroyOpen{
+        width: 98.8vw;
+        height: 100vh;
+    }
+    
+    #logoInStoryOpen{
+
+        top: 20px;
+        left: 10px;
+    }
+    
+    .closeStoryOpen{
+        top: 20px;
+        right: 25px;
+    }
+    .closeStoryOpen svg{
+        width: 30px;
+        height: 30px;
+    }
+    .photoStoryOpen{
+        width: 200px;
+        height: auto;
+    }
+    
+    
+    
+}
