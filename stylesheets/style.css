@@ -154,7 +154,7 @@ main {
     .sec1 {
         background-color: aqua;
         max-width: 470px;
-        width: 65%;
+        width: 65%;        
         height: 100vh;
     }
     
@@ -163,8 +163,8 @@ main {
     }
     
     .divHavePhotosInStorys {
-        height: 55px;
-        margin-block-end: 20px;
+        height: 85px;
+        margin-block-end: 10px;
     }
     
     .divHaveStoryAndName {
@@ -172,31 +172,29 @@ main {
     }
     
     .photosInStorys {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
     
     
-    
     .theNameOfThePersonOfTheStory{
-        width: 25px;
-        height: 15px;
+        width: 45px;
+        height: 30px;
         font-weight: 100;
-        font-size: 8px;
+        font-size: 10px;
        
     }
     
     
     #diVLeftIcon{
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
         left: 5px;
     }
     
     #diVRightIcon{
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
+        width: 20px;
+        height: 20px;
         right: 5px;
 
     }

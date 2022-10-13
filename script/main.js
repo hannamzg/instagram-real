@@ -15,7 +15,7 @@ let maxScroll = 0;
 
 async function getNames(){
     let theApi = `${base_api}character/random`
-    for (let i = 0; i < 14;i++){
+    for (let i = 0; i < 16;i++){
         let afterFetch = await (await fetch(theApi)).json();
         mangerStroy.addStories(afterFetch[0].img, afterFetch[0].name);
     };
@@ -98,7 +98,7 @@ function stam(){
 leftIcon.style.display = "none";
 
 function reternOffSet2(){
-    for(let i= 0; i<sCont.length; i++){ 
+    for(let i= 0; i<=sCont.length; i++){ 
         return -sCont[i].offsetWidth;
     }
 }
