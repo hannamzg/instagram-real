@@ -94,13 +94,13 @@ for(let i=0 ; i<divHaveStoryAndName.length; i++){
 
 
       divHaveStoryAndName[i].addEventListener("touchstart" ,(e)=>{
-        body.style.backgroundColor = "red"
+        for(let dd=0; dd<10; dd++){
+            body.innerHTML += `aaaa${dd}`
+        }
         for(const w=0; w<stories.length; w++){
             let found = e.path[1].id !== stories[w].id
             let theTarget = e.path[0];
-            body.style.backgroundColor = "blue"
                 if(found){
-                    body.style.backgroundColor = "green"
                     let div1 = document.createElement("div");
                     div1.classList.add("theStroyOpen");
                     let img = document.createElement("img");
