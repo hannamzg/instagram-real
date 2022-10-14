@@ -51,19 +51,11 @@ function buildTheStories(){
 
 
 
-function stam()
-{
-    let stories  = mangerStroy.getTheStoryes();
-    let divHaveStoryAndName = document.getElementsByClassName("divHaveStoryAndName");
-    let body = document.querySelector("body");
 
-    for(let i = 0; i<divHaveStoryAndName.length; i++)
-    {
-        divHaveStoryAndName[i].addEventListener("click" , (e) =>
-        {
-            alert("Stories Length: " + stories.length);
+let counter = 0;
             for(let j = 0; j < stories.length; j++)
             {
+                counter++;
                 let found = e.path[1].id !== stories[j].id;
                 let theTarget = e.path[0];
                 if(!found) continue;
@@ -77,7 +69,7 @@ function stam()
                 let svg = document.createElement("svg");
                 svg.classList.add("currentColor");
                 svg.setAttribute("fill", "currentColor");
-                svg.setAttribute("xmlns", "http://www.w3.org/2000/svg%22")
+                svg.setAttribute("xmlns", "http://www.w3.org/2000/svg%22%22)
                 let path = document.createElement("path");
                 path.setAttribute("d", "M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z");
 
@@ -90,12 +82,7 @@ function stam()
                     div1.style.display = "none";
                 }, 2000);
             }
-          });
-    }
-}
-
-
-
+            alert("Counter is: " + counter);
 
 
 
