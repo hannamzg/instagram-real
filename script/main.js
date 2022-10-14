@@ -95,10 +95,7 @@ for(let i=0 ; i<divHaveStoryAndName.length; i++){
 
       divHaveStoryAndName[i].addEventListener("touchstart" ,(e)=>{
         for(let dd=0; dd<10; dd++){
-            body.innerHTML += `aaaa${dd}`
-        }
-        for(const w=0; w<stories.length; w++){
-            let found = e.path[1].id !== stories[w].id
+            let found = e.path[1].id !== stories[dd].id
             let theTarget = e.path[0];
                 if(found){
                     let div1 = document.createElement("div");
@@ -125,6 +122,8 @@ for(let i=0 ; i<divHaveStoryAndName.length; i++){
                         }, 2000);
                     }
         }
+         
+        
       })
 
 
