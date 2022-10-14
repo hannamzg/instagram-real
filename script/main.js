@@ -60,8 +60,10 @@ for(let i=0 ; i<divHaveStoryAndName.length; i++){
     divHaveStoryAndName[i].addEventListener("click" ,(e)=>{
         for(let j=0; j<stories.length; j++){
         let found = e.path[1].id !== stories[j].id
-        let theTarget = e.path[0]
+        let theTarget = e.path[0];
+        body.style.backgroundColor = "blue"
             if(found){
+                body.style.backgroundColor = "green"
                 let div1 = document.createElement("div");
                 div1.classList.add("theStroyOpen");
                 let img = document.createElement("img");
@@ -86,50 +88,7 @@ for(let i=0 ; i<divHaveStoryAndName.length; i++){
                     }, 2000);
                 }
         }
-     })
-
-
-     divHaveStoryAndName[i].addEventListener("touchstart" ,(e)=>{
-        body.style.backgroundColor = "red"
-        for(let j=0; j<stories.length; j++){
-        let found = e.path[1].id !== stories[j].id
-        let theTarget = e.path[0]
-            if(found){
-                let div1 = document.createElement("div");
-                div1.classList.add("theStroyOpen");
-                let img = document.createElement("img");
-                img.classList.add("photoStoryOpen")
-                img.src = theTarget.src;
-                let div2 = document.createElement("div");
-                div2.classList.add("closeStoryOpen");
-                let svg = document.createElement("svg");
-                svg.classList.add("currentColor");
-                svg.setAttribute("fill", "currentColor")
-                svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-                let path = document.createElement("path");
-                path.setAttribute("d", "M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z");
-
-                svg.appendChild(path);
-                div2.appendChild(svg);
-                div1.appendChild(img);
-                div1.appendChild(div2);
-                body.appendChild(div1);
-                    setTimeout(() => {
-                        div1.style.display = "none"
-                    }, 2000);
-                }
-        }
-     })
-
-
-     
-
-
-
-
-
-
-
+      })
 
     }
 }
