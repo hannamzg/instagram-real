@@ -61,7 +61,7 @@ function stam()
     {
         divHaveStoryAndName[i].addEventListener("click" , (e) =>
         {
-            alert("test");
+            alert("Stories Length: " + stories.length);
             for(let j = 0; j < stories.length; j++)
             {
                 let found = e.path[1].id !== stories[j].id;
