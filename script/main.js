@@ -51,13 +51,21 @@ function buildTheStories(){
 
 
 
+function stam()
+{
+    let stories  = mangerStroy.getTheStoryes();
+    let divHaveStoryAndName = document.getElementsByClassName("divHaveStoryAndName");
+    let body = document.querySelector("body");
 
-let counter = 0;
+    for(let i = 0; i<divHaveStoryAndName.length; i++)
+    {
+        divHaveStoryAndName[i].addEventListener("click" , (e) =>
+        {
             for(let j = 0; j < stories.length; j++)
             {
-                counter++;
-                let found = e.path[1].id !== stories[j].id;
-                let theTarget = e.path[0];
+                let eventPath = e.path || e.composedPath();
+                let found = eventPath[1].id !== stories[j].id;
+                let theTarget = eventPath[0];
                 if(!found) continue;
                 let div1 = document.createElement("div");
                 div1.classList.add("theStroyOpen");
@@ -82,7 +90,12 @@ let counter = 0;
                     div1.style.display = "none";
                 }, 2000);
             }
-            alert("Counter is: " + counter);
+          });
+    }
+}
+
+
+
 
 
 
