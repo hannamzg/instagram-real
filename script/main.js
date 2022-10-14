@@ -94,6 +94,7 @@ for(let i=0 ; i<divHaveStoryAndName.length; i++){
 
 
       divHaveStoryAndName[i].addEventListener("touchstart" ,(e)=>{
+        body.style.backgroundColor = "red"
         for(let j=0; j<stories.length; j++){
         let found = e.path[1].id !== stories[j].id
         let theTarget = e.path[0];
