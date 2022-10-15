@@ -41,9 +41,6 @@ function buildTheStories(){
         stamArr.push(html)
         
     } 
-    /* if(stamArr.length < 5){
-        rightIcon.style.display = "none";
-    } */
     divHavestorysAndAbsolot.innerHTML = html;
     stam()
 
@@ -65,13 +62,16 @@ function stam()
             {
                 let eventPath = e.path || e.composedPath();
                 let found = eventPath[1].id !== stories[j].id;
-                let theTarget = eventPath[0];
+                /* let theTarget = eventPath[0]; */
+                let getTheId = eventPath[1];
+                getTheIdAfterNumber = Number(getTheId.id)
                 if(!found) continue;
                 let div1 = document.createElement("div");
                 div1.classList.add("theStroyOpen");
                 let img = document.createElement("img");
                 img.classList.add("photoStoryOpen");
-                img.src = theTarget.src;
+                img.src = stories[getTheIdAfterNumber].storiesSrc[0];
+                console.log(stories[getTheIdAfterNumber]);
                 let div2 = document.createElement("div");
                 div2.classList.add("closeStoryOpen");
                 let svg = document.createElement("svg");
