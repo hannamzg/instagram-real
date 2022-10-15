@@ -101,7 +101,7 @@ main {
 }
 
 .theStroyOpen{
-    width: 98.8vw;
+    width: 99.8vw;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -163,23 +163,23 @@ main {
     }
     
     .divHavePhotosInStorys {
-        height: 85px;
+        height: 95px;
         margin-block-end: 10px;
     }
     
     .divHaveStoryAndName {
-        width: 25px; 
+        width: 45px; 
     }
     
     .photosInStorys {
-        width: 35px;
-        height: 35px;
+        width: 55px;
+        height: 55px;
     }
     
     
     .theNameOfThePersonOfTheStory{
         width: 45px;
-        height: 30px;
+        max-height: 10px;
         font-weight: 100;
         font-size: 10px;
        
